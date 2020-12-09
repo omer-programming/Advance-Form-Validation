@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Mulish:wght@300&display=swap');
+
+:root {
+    --Myfont : 'Mulish', sans-serif;
+    --My-btn-Font :  'Montserrat', sans-serif;
+    --lg-lightcolor : linear-gradient(to left, rgba(116 ,235,213,0.6),rgba(159,172,230,0));
+    --lg-color : linear-gradient(to left , #74ebd5 , #9face6 );
+}
+
+body {
+    background-image: var(--lg-lightcolor), url("https://www.arabnews.com/sites/default/files/styles/n_670_395/public/2020/07/04/2175131-450297373.jpg?itok=a78MutPD");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-family: var(--Myfont);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 200vh;
+    width: 100vw;
+    
+}
+
+.container{
+    background-color: #fff;
+    overflow: hidden;
+    width: calc(100vw - 55vw);
+    max-width: 100%;
+    border-radius: 10px;
+    -webkit-border-radious: 10px;
+    -webkit-box-shadow: 3px 2px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    3px 2px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         3px 2px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+.header{
+    background : var(--lg-color);
+    padding: 15px 0px;
+}
+
+.header h2{
+    font-size: 24px;
+    color: #222;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--My-btn-Font);
+}
+
+.form {
+    padding: 40px;
+}
+
+.form-control{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.form-control label{
+    display: inline block;
+    margin-bottom: 5px;
+}
+
+.form-control input{
+    font-family: var(--Myfont);
+    border: 2px solid #f0f0f0;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 14px;
+    width: 100%;
+    display: block;
+    margin-top: 3px;
+}
+
+.form-control input:focus {
+    outline: none;
+    border-color: #777;
+}
+
+.form-control.success input{
+    border-color: #2ecc71;
+}
+
+.form-control.error input{
+    border-color: #e74c3c;
+}
+
+.form-control i{
+    position: absolute;
+    right: 12px;
+    top: 38px;
+    visibility: hidden;
+}
+
+.form-control.success i.fa-check-circle{
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle{
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.form-control small{
+    position: absolute;
+    color: #e74c3c;
+    left: 0;
+    visibility: hidden;
+}
+
+.form-control.error small{
+    visibility: visible;
+}
+
+
+
+.form .btn{
+    display: block;
+    width: 100%;
+    background: var(--lg-color);
+    padding: 15px 0;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    font-family: var(--My-btn-Font);
+    font-weight: bold;
+    transition: all 1s ease;
+    margin-top: 20px;
+}
+
+.form .btn:hover {
+    background : linear-gradient(to right , #74ebd5, #9faceb);
+}
+
+@media screen and(max-width:998px){
+    .container{
+        width: calc(100vw - 35vw);
+        max-width: 100%;
+    }
+}

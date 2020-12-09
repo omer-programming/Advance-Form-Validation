@@ -1,0 +1,94 @@
+<html lang="en">
+<!-- html preferred language english -->
+<head>
+    <title>FORM VALIDATION</title>
+    <!--title of page -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" />
+    <!-- font -->
+    <meta charset="utf-8">
+    <!--meta charset utf 8 is character encoding capable of encoding all characters on the web...it is replaced ascii as the default character encoding...utf is used for something like 93% of all web traffic-->
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <!--a meta viewport element gives the browser instructions on how to control the page's dimension and scaling...it's recommended to use this in all your html-->
+    <link rel="stylesheet" href="style.css">
+    <!-- access to css-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="app.js"></script>
+    <!-- adding sweet alert to form -->
+    <!-- access to j.s -->
+    
+</head>
+<body>
+    <div class="container">
+    <!-- container for the page which holds entire form -->
+        <div class="header">
+        <!--heading within class header -->
+            <h2>REGISTRATION FORM</h2>
+        </div>
+        <form class="form" id="form">
+        <!-- form with class and id -->
+            <div class="form-control">
+            <!-- form control basically holds label input feild --> 
+                <label>Username</label>
+                <input type="text" name="" id="username" placeholder="Enter your fullname" autocomplete="off">
+                <!-- input type text with id and placeholder -->
+                <i class="fas fa-check-circle"></i>
+                <!--for success -->
+                <i class="fas fa-exclamation-circle"></i>
+                <!-- for error -->
+                <small>Error Msg</small>
+                <!-- contains error messages-->
+            </div>
+            <div class="form-control">
+            <!-- form control basically holds label input feild -->
+                <label>Email</label>
+                <input type="email" name="" id="emailid" placeholder="Enter your Email">
+                <!-- input type text with id and placeholder -->
+                <i class="fas fa-check-circle"></i>
+                <!--for success -->
+                <i class="fas fa-exclamation-circle"></i>
+                <!--for error -->
+                <small>Error Msg</small>
+                <!-- contains error messages-->
+            </div>
+            <div class="form-control">
+            <!-- form control basically holds label input feild -->
+                <label>Phone Number</label>
+                <input type="number" name="" id="mobnumber" placeholder="Enter your Phone Number">
+                <!-- input type text with id and placeholder -->
+                <i class="fas fa-check-circle"></i>
+                <!--for success -->
+                <i class="fas fa-exclamation-circle"></i>
+                <!--for error -->
+                <small>Error Msg</small>
+                <!-- contains error messages-->
+            </div>
+            <div class="form-control">
+            <!-- form control basically holds label input feild -->
+                <label>Password</label>
+                <input type="password" name="" id="password" placeholder="Enter your password">
+                <!-- input type text with id and placeholder -->
+                <i class="fas fa-check-circle"></i>
+                <!--for success -->
+                <i class="fas fa-exclamation-circle"></i>
+                <!--for error -->
+                <small>Error Msg</small>
+                <!-- contains error messages-->
+            </div>
+            <div class="form-control">
+            <!-- form control basically holds label input feild -->
+                <label>Confirm Password</label>
+                <input type="password" name="" id="confirmpassword" placeholder="Enter your password again">
+                <!-- input type text with id and placeholder -->
+                <i class="fas fa-check-circle"></i>
+                <!--for success -->
+                <i class="fas fa-exclamation-circle"></i>
+                <!--for error -->
+                <small>Error Msg</small>
+                <!-- contains error messages-->
+            </div>
+            <input type="submit" value="Submit" class="btn" name="">
+            <!-- submit button -->
+        </form> <!-- form closing -->
+    </div> <!-- container closing -->
+</body>
+</html>
